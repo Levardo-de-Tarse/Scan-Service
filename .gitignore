@@ -1,0 +1,70 @@
+target/
+scans/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Portable Windows build (jpackage + ZIP — большие бинарники, не для репозитория)
+dist/
+
+# Логи и временные дампы JVM
+*.log
+logs/
+hs_err_pid*.log
+replay_pid*.txt
+
+# Локальные секреты и переопределения Spring Boot (в репозиторий — только шаблоны без значений)
+.env
+.env.*
+!.env.example
+application-local.properties
+application-local.yml
+application-local.yaml
+application-*-local.properties
+application-*-local.yml
+application-*-local.yaml
+
+### IntelliJ IDEA ###
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+*.iws
+*.iml
+*.ipr
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### Windows (Thumbnails / folder metadata) ###
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+### Editor / backup cruft ###
+*.bak
+*~
+*.swp
+*.swo
+
+### Mac OS ###
+.DS_Store
+/.idea/
